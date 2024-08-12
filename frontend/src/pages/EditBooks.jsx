@@ -16,7 +16,7 @@ const EditBook = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get(`http://localhost:5555/books/${id}`)
+    axios.get(`https://book-store-backend-m1f4.onrender.com/${id}`)
       .then((res) => {
         setAuthor(res.data.author);
         setPublishedYear(res.data.publishedYear);
