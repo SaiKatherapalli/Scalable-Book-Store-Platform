@@ -13,7 +13,7 @@ const Home = () => {
   const [showType, setShowType] = useState('table');
   useEffect(() => {
     setLoading(true);
-    axios.get('http://localhost:5555/books')
+    axios.get('https://book-store-backend-m1f4.onrender.com')
       .then((res) => {
         setBooks(res.data.data);
         setLoading(false);
